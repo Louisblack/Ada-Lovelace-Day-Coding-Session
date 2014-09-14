@@ -10,4 +10,16 @@ var instagramApi = Instajam.init({
 
 if (!instagramApi.authenticated) {
         window.location = API.authUrl;
+} else {
+	console.log("Logged in");
+	console.log(instagramApi);
 }
+
+var addPhotoToPage = function(photo) {
+	var newImage = $('<img src="' + photo + '"/>' );
+	$('#photos').append(newImage);
+}
+
+$(document).ready(function() {
+	loadPhotos();
+});

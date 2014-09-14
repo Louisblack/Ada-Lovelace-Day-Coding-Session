@@ -6,8 +6,10 @@ Presentation
 
 	Things to explain 
 
+		assignment
 		Camel case
 		Variables
+		Semicolons
 		for loop
 		if
 		functions
