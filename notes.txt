@@ -1,2 +1,14 @@
 Notes
 ----------------------------------------
+
+Presentation
+	Overview of what we'll cover
+
+	Things to explain 
+
+		Camel case
+		Variables
+		for loop
+		if
+		functions
+
