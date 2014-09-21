@@ -1,8 +1,8 @@
 .hidden {
-	display: none;
+    display: none;
 }
 
 #map {
-	height: 400px;
-	width: 500px;
+    height: 400px;
+    width: 500px;
 }
