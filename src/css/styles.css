@@ -1,8 +1,41 @@
+
+.photos {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.photo {
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.photoContainer {
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
 .hidden {
     display: none;
 }
 
-#map {
+#mapDiv {
     height: 400px;
-    width: 500px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapPhotoContainer {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+#mapPhoto {
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
 }

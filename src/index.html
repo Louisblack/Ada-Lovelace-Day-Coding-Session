@@ -3,9 +3,12 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<h1>Ada's Super Amazing Instagram App!</h1>
+    <div class="jumbotron">
+        <h1>Ada's Super Amazing Instagram App!</h1>
+    </div>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"> </script>
     <script type="text/javascript" src="bower_components/instajam/src/instajam.js"></script>
     <script type="text/javascript"
@@ -14,9 +17,11 @@
     <script type="text/javascript" src="lib/init.js" ></script>
     <script type="text/javascript" src="lib/your-code-here.js" ></script>
 
-<div id="map" class="hidden"></div>
-<img id="image" class="hidden"></div>
-<div id="photos"></div>
+<div id="mapDiv" class="hidden"></div>
+<div class="mapPhotoContainer">
+    <img id="mapPhoto" class="hidden">
+</div>    
+<div class="photos" id="photos"></div>
 
 
 </body>	

@@ -15,12 +15,10 @@ $(document).ready(function() {
         console.log(instagramApi);
     }
 
-    map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 6
-    });
+
 
     addPhotoToPage = function(photo) {
-        var newImage = $('<img src="' + photo + '"/>' );
+        var newImage = $('<div class="photoContainer"><img class="photo" src="' + photo + '"/></div>' );
         $('#photos').append(newImage);
     }
 
@@ -28,7 +26,16 @@ $(document).ready(function() {
         if (!latitude || !longitude) {
 			alert("No location info found :(");        
         } else {
-			$('#map').removeClass('hidden');
+            if (!this.map) {
+                $('#mapDiv').removeClass('hidden');
+                map = new google.maps.Map(document.getElementById("mapDiv"), {
+                    zoom: 6,
+                    mapTypeId: google.maps.MapTypeId.HYBRID,
+                    center: new google.maps.LatLng(latitude, longitude),
+                });
+                
+            }
+			
 			var myLatlng = new google.maps.LatLng(latitude, longitude);
 
 			var marker = new google.maps.Marker({
@@ -37,7 +44,7 @@ $(document).ready(function() {
 			});
 
 			google.maps.event.addListener(marker, 'mouseover', function() {
-				var image = $("#image");
+				var image = $("#mapPhoto");
 				image.removeClass('hidden');
 				image.attr('src', photo);
 			});
