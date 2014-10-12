@@ -1,1 +1,0 @@
-instagramKey = '4f9f3a58b64c47fb9f0f9ec8a94b1ea3';
