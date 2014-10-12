@@ -35,6 +35,10 @@ $(document).ready(function() {
         document.location.href = 'https://instagram.com/accounts/logout'
     });
 
+    forEach = function(list, f) {
+        list.forEach(f);
+    }
+
 	photoHasLocation = function(photo) {
 		return photo.hasLocation;
 	};

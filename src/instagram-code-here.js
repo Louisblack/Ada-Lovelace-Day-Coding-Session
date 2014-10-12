@@ -1,9 +1,8 @@
 photosLoaded = function(photos) {
-    console.log(photos); // So we can see what we get back from Instagram
 
-    // For loop to add photos to page goes here.
-
-    photos.forEach(function(photo) {
+    // add your code under this line
+    
+    forEach(photos, function(photo) {
         addPhotoToPage(photo);
         if (photoHasLocation(photo)) {
             addPhotoToMap(photo);
